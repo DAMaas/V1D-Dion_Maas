@@ -15,7 +15,7 @@ def standaardprijs(afstandKM):
         if afstandKM <= 50:
             prijs = afstandKM * prijsPerKM
         elif afstandKM > 50:
-            prijs = vastBedragVanafVijftigKM + (afstandKM * prijsPerKM)
+            prijs = vastBedragVanafVijftigKM + (afstandKM * goedkoperePrijsVanafVijftigPerKM)
     return prijs
 
 def ritprijs(leeftijd, weekendrit, afstandKM):
