@@ -3,7 +3,6 @@
 afstandKM = 0
 leeftijd = 0
 weekendrit = False
-magLeeftijdKorting = leeftijd < 12 or leeftijd >= 65
 
 def standaardprijs(afstandKM):
     prijs = 0
@@ -21,6 +20,7 @@ def standaardprijs(afstandKM):
 def ritprijs(leeftijd, weekendrit, afstandKM):
     basisPrijs = standaardprijs(afstandKM)
     kortingPercentage = 0
+    magLeeftijdKorting = leeftijd < 12 or leeftijd >= 65
 
     if magLeeftijdKorting:
         if weekendrit:
